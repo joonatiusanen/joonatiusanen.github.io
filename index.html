@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fi">
+<Head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<meta name="author" content="Joona">
+
+<meta name="description" content="Halpa ja laadukas Digi cafe pasilassa">
+
+<meta name="keywords" content="CS2, CSGO">
+<title>Conter Strike - Pelit</title>
+
+
+<link href="tyyli2.css" rel="stylesheet">
+
+
+</Head>
+<body>
+    <main> 
+     <header> 
+   <h1>Counter Strike - Pelit</h1>
+
+  <button class="menu-toggle" aria-label="Avaa valikko">
+    <svg width="32" height="32" viewBox="0 0 32 32">
+      <rect y="6" width="32" height="4" rx="2" fill="#333"/>
+      <rect y="14" width="32" height="4" rx="2" fill="#333"/>
+      <rect y="22" width="32" height="4" rx="2" fill="#333"/>
+    </svg>
+  </button>
+  <nav id="navMenu">
+        <a href="index.html" class ="sivulla">Etusivu</a>
+        <a href="Muut.html">Muut versiot</a>
+        <a href="CS2.html">CS2</a>
+        <a href="CSGO.html">CSGO</a>
+  </nav>
+  <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('open');
+    });
+  </script>
+   </header>
+
+
+
+  <div class="side-by-side"> 
+      
+    <article> <div>
+          <h2>Counter Strike - Peli Historia</h2>
+          </div> <div>
+          <p>
+            Counter-Strike on taktinen ensimmäisen persoonan ammuntapelisarja, jossa kaksi joukkuetta – terroristit ja erikoisjoukot – taistelevat toisiaan vastaan kierrospohjaisissa otteluissa.
+            Sarja alkoi vuonna 1999, kun Counter-Strike julkaistiin alun perin modina pelille Half-Life. Pelin kehitti myöhemmin Valve Corporation, ja siitä tuli nopeasti yksi maailman suosituimmista moninpeleistä.
+          </p>
+          </div>
+        </article>
+
+        <figure class="ylös">
+        <img src="cs24.jpg" alt="cs2kuva" id="cs22" >
+ 
+      </figure>
+  
+  </div> 
+
+
+ <footer>
+    <hr>  <div>@copy;Joona</div>
+  </footer>
+ </main> 
+
+</body>
+</html> 

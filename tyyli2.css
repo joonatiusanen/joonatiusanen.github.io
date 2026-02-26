@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+
+
+h1 {
+color: orange;
+text-align: center;
+font-family: "Audiowide", "display";
+font-size: 100px;}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 50px;
+    }
+}
+
+h2 { 
+    color:orange;
+    font-family: "Audiowide", "display";
+    text-align: center;
+    font-size: 35px;
+}
+
+@media (max-width: 600px) {
+    h2 {
+        font-size: 0;
+    }
+}
+
+body {
+    background-color: rgb(1, 21, 34);
+
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/* responsive hamburger menu */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    background: rgb(1, 21, 34);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  nav.open {
+    max-height: 500px;
+  }
+}
+
+nav > a {
+        color:orange; background-color: black;
+          padding: 13px; text-align:center; 
+          border: 3px solid orange;
+          text-decoration: none;
+          display:square;
+          width:12cm;
+          box-shadow: 10px 10px 0px rgb(63, 45, 12);
+          border-radius: 20px;
+          font-family: "Audiowide", "display";
+        }
+
+.sivulla {background-color:orange; color:black;
+    box-shadow: 0px 0px 0px rgb(63, 45, 12);
+    border-radius: 20px;
+    border: 3px solid black;
+
+
+}
+
+nav > a:hover {
+    background-color: orange; color: black;
+    box-shadow: 0px 0px 0px rgb(63, 45, 12);
+    border-radius: 20px;
+    border: 3px solid black;
+}
+
+/* Side-by-side layout: image and text together on full screen */
+.side-by-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+#cs22 { width: 100%; 
+        height:auto;
+         max-width: 500px; 
+         min-width: 400px;
+         border-radius:50px;
+         border:rgb(153, 99, 0) 4px solid; 
+         background-color: black; 
+         padding: 10px; 
+         box-shadow: 8px 8px 8px rgb(241, 220, 179);
+         display: flex;
+         flex-direction: row; }
+         
+ 
+   
+
+
+@media (max-width: 600px) {
+  .side-by-side {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  #cs22 {
+    max-width: 15%;
+    border-radius: 8px;
+    border: 0px solid rgb(153, 99, 0);
+    padding: 0px;
+    box-shadow: 0px 0px 0px rgb(241, 220, 179); 
+  }
+}
+
+
+p  { color:orange;
+     font-size:25px;
+     font-family: "Audiowide", "display";
+    width:100%;
+    margin:auto;
+    border: 1px rgb(153, 99, 0) solid;
+    padding: 20px; 
+    border-radius: 20px;
+    box-shadow: 5px 5px 0px rgb(153, 99, 0);
+    background-color: rgb(1, 19, 26); }
+
+    @media (max-width: 600px) {
+        .flex-container {
+            flex-direction: column;}  
+        p {
+            font-size: 20px;
+            width: 90%;}
+          
+           }
+
+
+
+
+
+
+
+
