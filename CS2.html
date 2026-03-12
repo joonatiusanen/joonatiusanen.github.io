@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fi">
+<Head>
+
+<meta charset="utf-8">
+
+<meta name="viewport" content="width=device-width, intial-scale=1.0">
+
+<meta name="author" content="Joona">
+
+<meta name="description" content="Halpa ja laadukas Digi cafe pasilassa">
+
+<meta name="keywords" content="CS2, CSGO">
+<title>Conter Strike - Pelit</title>
+
+
+<link href="tyyli2.css" rel="stylesheet">
+
+
+ 
+
+</Head>
+<body>
+    <main> 
+     <header> 
+   <h1>Counter Stirke - Pelit</h1>
+
+    <button class="menu-toggle" aria-label="Avaa valikko">
+    <svg width="32" height="32" viewBox="0 0 32 32">
+      <rect y="6" width="32" height="4" rx="2" fill="#333"/>
+      <rect y="14" width="32" height="4" rx="2" fill="#333"/>
+      <rect y="22" width="32" height="4" rx="2" fill="#333"/>
+    </svg>
+  </button>
+
+  <nav id="navMenu">
+      
+        <a href="index.html">Etusivu</a>
+         <a href="Muut.html">Muut versiot</a>
+        <a href="CS2.html" class = "sivulla">CS2</a>
+        <a href="CSGO.html">CSGO</a>
+
+   </nav>
+
+   <script>
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navMenu = document.getElementById('navMenu');
+    if (menuToggle && navMenu) {
+      menuToggle.addEventListener('click', () => navMenu.classList.toggle('open'));
+    }
+   </script>
+
+    
+
+
+    </header>
+      <article> 
+          <h2>Counter Strike - Peli Historia</h2>
+      </article>
+  
+      <div class="side-by-side">
+ <figure class="ylös">
+  <img src="tcs2.jpg" alt="tcs2kuva" id="tcs2">
+ </figure>
+  
+ <div>
+     <p class="linja">
+
+      <span class="korostus"> Counter-Strike 2 </span> <br>
+Counter-Strike 2 on maailman suosituimman taktisen ammuntapelisarjan uusin luku, joka vie ikonisen räiskintäkokemuksen täysin uudelle aikakaudelle. Kyseessä ei ole vain pieni päivitys, vaan peli on rakennettu kokonaan Valven nykyaikaiselle Source 2 -pelimoottorille. Tämä muutos näkyy pelaajalle välittömästi kirkkaampana valaistuksena, tarkempina pintoina ja entistä realistisempina efekteinä, mutta pinnan alla on tapahtunut vielä suurempia teknisiä harppauksia.
+Pelin suurin pelillinen mullistus on täysin uudistetut savukranaatit. Siinä missä aiemmissa versioissa savu oli staattinen "pilvi", CS2:ssa savu on dynaaminen ja elävä osa pelimaailmaa. Se reagoi ympäristöönsä: luodit ja käsikranaatit repivät savuun hetkellisiä reikiä, joiden läpi voi nähdä vastustajan, ja savu täyttää huoneet tai portaikot luonnollisesti tilan muotojen mukaan. Tämä on tuonut peliin aivan uuden strategisen tason, jota ei ole ennen nähty.
+Teknisesti peli on siirtynyt niin sanottuun sub-tick-järjestelmään. Sen tarkoituksena on poistaa pienikin viive pelaajan liikkeiden ja palvelimen väliltä, jolloin jokainen laukaus ja hyppy rekisteröityy täsmälleen sillä hetkellä, kun pelaaja painaa näppäintä. Kilpailullinen puoli on myös keskiössä uudistetun Premier-tilan myötä, jossa pelaajat saavat tarkan numeerisen CS-ratingin. Tämä tekee oman kehityksen seuraamisesta ja maailmanlaajuisiin tulostauluihin nousemisesta koukuttavampaa kuin koskaan.
+ </p>
+ </div>
+
+</div>
+
+  
+
+
+</body>
+</html> 
